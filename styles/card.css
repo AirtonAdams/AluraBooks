@@ -1,0 +1,83 @@
+.card {
+    background-color: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    margin: 2rem 2.4rem;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1.4rem 1.6rem;
+}
+
+.card__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 0.5rem;
+}
+
+.card__wrapper {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    padding-block: 1rem;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    padding-right: 1rem;
+}
+
+.card__stars, .card__titulo, .card__livro-titulo, .card__descricao {
+    margin-bottom: 1.5rem;
+}
+
+.card__stars {
+    width: 50%;
+}
+
+.card__titulo {
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.card__livro-titulo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.card__descricao {
+    font-size: 1.4rem;
+}
+
+.card__imagem {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+}
+
+.card__imagem img {
+    width: inherit;
+    border-radius: 1rem;
+}
+
+.card__itens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card__botao {
+    text-align: center;
+    padding: 1.2rem 1.6rem;
+    color: var(--white);
+    background-color: var(--orange);
+    font-weight: 700;
+    border-radius: 1rem;
+}
