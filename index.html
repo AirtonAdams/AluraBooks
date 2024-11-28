@@ -16,13 +16,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <title>Alura Books</title>
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav>
+      <nav>
+        <div class="navigation__container">
           <input type="checkbox" id="menu" class="container__botao" />
           <label for="menu" class="menu__label">
             <span class="menu__hamburguer">
@@ -65,29 +66,55 @@
               <a href="#" class="lista-menu__link">DESIGN & UX</a>
             </li>
           </ul>
-        </nav>
-        <img src="source/images/Logo.svg" alt="Logo" class="logo" />
-      </div>
-      <div class="container">
-        <a href="#"
-          ><img
-            src="source/icons/Favoritos.svg"
-            alt="Meus favoritos"
-            class="container__image"
-        /></a>
-        <a href="#"
-          ><img
-            src="source/icons/Compras.svg"
-            alt="Carrinho de compras"
-            class="container__image"
-        /></a>
-        <a href="#"
-          ><img
-            src="source/icons/Usuário.svg"
-            alt="Meu usuário"
-            class="container__image"
-        /></a>
-      </div>
+          <img src="source/images/Logo.svg" alt="Logo" class="logo" />
+          <a href="#" class="logo__nome"><b class="logo__nome-bold">Alura</b> Books</a>
+        </div>
+        <ul class="nav__list">
+          <input type="checkbox" id="categorias" class="categorias__botao">
+          <label for="categorias">
+            <li class="nav__list-item">Categorias</li>
+          </label>
+          <ul class="lista-menu">
+            <li class="lista-menu__item">
+              <a href="#" class="lista-menu__link">PROGRAMAÇÃO</a>
+            </li>
+            <li class="lista-menu__item">
+              <a href="#" class="lista-menu__link">FRONT-END</a>
+            </li>
+            <li class="lista-menu__item">
+              <a href="#" class="lista-menu__link">INFRAESTRUTURA</a>
+            </li>
+            <li class="lista-menu__item">
+              <a href="#" class="lista-menu__link">BUSINESS</a>
+            </li>
+            <li class="lista-menu__item">
+              <a href="#" class="lista-menu__link">DESIGN & UX</a>
+            </li>
+          </ul>
+          <li class="nav__list-item"><a href="" class="nav__favoritos">Favoritos</a></li>
+          <li class="nav__list-item">Minha Estante</li>
+        </ul>
+        <div class="nav__icons">
+          <a href="#"
+            ><img
+              src="source/icons/Favoritos.svg"
+              alt="Meus favoritos"
+              class="container__icon container__icon-fav"
+          /></a>
+          <a href="#"
+            ><img
+              src="source/icons/Compras.svg"
+              alt="Carrinho de compras"
+              class="container__icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="source/icons/Usuário.svg"
+              alt="Meu usuário"
+              class="container__icon"
+          /></a>
+        </div>
+      </nav>
     </header>
 
     <section class="banner">
@@ -122,6 +149,8 @@
           <div class="swiper-slide"><img src="source/images/Gestão.svg" alt="Livro sobre Gestão de Produtos"></div>
           <div class="swiper-slide"><img src="source/images/Guia Front-end.svg" alt="Livro guia sobre front-end"></div>
           <div class="swiper-slide"><img src="source/images/Javascript.svg" alt="Livro sobre Javascript"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
 
@@ -228,6 +257,10 @@
           el: ".swiper-pagination",
           type: "bullets",
           clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>

@@ -1,3 +1,7 @@
+.swiper-button-next, .swiper-button-prev {
+    display: none;
+}
+
 .carrossel__titulo {
     font-size: 1.8rem;
     font-weight: 700;
@@ -22,4 +26,21 @@
 
 .swiper-slide {
     padding-inline: 0.5rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+
+
+
+
+
+
+
+
+
+
+
+    
 }
