@@ -30,7 +30,20 @@
 
 
 @media screen and (min-width: 1024px) {
+    .swiper-button-next, .swiper-button-prev {
+        display: flex;
+        background: var(--blue-gradient);
+        --swiper-navigation-size: 44px;
+        --swiper-navigation-top-offset: 50%;
+        --swiper-navigation-sides-offset: 100px;
+        --swiper-navigation-color: var(--white);
+        padding: 2rem;
+        border-radius: 5rem;
+    }
 
+    .swiper-button-next::after {
+        
+    }
 
 
 
