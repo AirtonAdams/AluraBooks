@@ -6,3 +6,49 @@ footer {
     background-color: var(--white);
     padding: 2.4rem;
 }
+
+footer div {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+
+        div {
+            display: flex;
+            flex-direction: column;
+    
+            & h2 {
+                text-transform: uppercase;
+                color: var(--light-gray);
+                margin-bottom: 2.5rem;
+            }
+
+            & li {
+                padding-block: 0.8rem;
+            }
+        }
+    }
+
+    .footer__ancora {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        color: var(--gray);
+        gap: 0.7rem;
+    }
+
+
+
+
+
+
+
+
+
+}

@@ -28,13 +28,22 @@
     background: var(--blue-gradient);
 }
 
-.swiper-slide img {
+.swiper {
     width: 100%;
 }
 
 .swiper-slide {
-    padding-inline: 0.5rem;
+    background-position: center;
+    background-size: cover;
+    width: 20rem;
 }
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+
 
 
 @media screen and (min-width: 1024px) {
@@ -50,7 +59,19 @@
     }
 
     .swiper {
-        width: 80%;
+        width: 100%;
+    }
+
+    
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 30rem;
+    }
+  
+    .swiper-slide img {
+        display: block;
+        width: 100%;
     }
 
     .carrossel__titulo {
