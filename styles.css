@@ -12,15 +12,10 @@
     --blue-gradient: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --blue: #002F52;
     --orange: #EB9B00;
-    --black: #000
-    --gray: #474646
-    --light-gray: #858585
 }
 
 body {
-    box-sizing: border-box;
     background-color: var(--soft-white);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    width: 100vw;
 }

@@ -40,26 +40,3 @@
     background: url("../source/icons/Pesquisa.svg") no-repeat;
     background-position: 1rem;
 }
-
-@media screen and (min-width: 1024px) {
-    .banner {
-        padding-block: 8rem;
-    }
-
-    .banner__titulo, .banner__texto {
-        max-width: 60rem;
-    }
-
-    .banner__titulo {
-        font-size: 3.6rem;
-    }
-
-    .banner__pesquisa {
-        padding-block: 1.6rem;
-        max-width: 50rem;
-    }
-
-    .banner__pesquisa::placeholder {
-        font-size: 1.6rem;
-    }
-}

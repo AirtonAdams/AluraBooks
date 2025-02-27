@@ -81,26 +81,3 @@
     font-weight: 700;
     border-radius: 1rem;
 }
-
-@media screen and (min-width: 1024px) {
-    .card {
-        width: 70%;
-        margin: 7rem 2rem;
-    }
-
-    .card__wrapper {
-        display: grid;
-        grid-template-columns: 75% 25%;
-        padding-block: 1rem;
-    }
-
-    .card__descricao {
-        font-size: 1.6rem;
-    }
-    
-    .card__info {
-        padding-inline: 1rem 12rem;
-    }
-
-
-}
