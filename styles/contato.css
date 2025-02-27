@@ -41,3 +41,19 @@
     background: url("../source/icons/Email.svg") no-repeat;
     background-position: 1rem;
 }
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 3rem;
+        padding: 3rem 15rem;
+    }
+
+    .contato__titulo {
+        font-size: 2.4rem;
+        word-wrap: break-word;
+    }
+
+
+}
