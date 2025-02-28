@@ -104,3 +104,19 @@
 
 
 }
+
+@media  screen and (min-width: 1728px) {
+    
+    .card {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .card__info {
+        padding-inline: 1rem 6rem;
+    }
+
+    .card__titulo {
+        font-size: 3.2rem;
+    }
+}

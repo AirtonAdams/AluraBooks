@@ -5,6 +5,14 @@
     justify-content: center;
 }
 
+.swiper__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
 .swiper-button-next, .swiper-button-prev {
     display: none;
 }
@@ -61,7 +69,6 @@
     .swiper {
         width: 100%;
     }
-
     
     .swiper-slide {
         background-position: center;
@@ -82,5 +89,13 @@
     .swiper-pagination {
         position: initial;
         padding: 3rem 0 3rem 0;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .swiper__wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 0 5rem 5rem 5rem;
     }
 }

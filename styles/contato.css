@@ -54,6 +54,17 @@
         font-size: 2.4rem;
         word-wrap: break-word;
     }
+}
 
+@media screen and (min-width: 1728px) {
+    .contato {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 3rem;
+        padding: 3rem 40rem;
+    }
 
+    .contato__input-email::placeholder {
+        font-size: 1.6rem;
+    }
 }

@@ -34,6 +34,10 @@ nav {
     margin-inline: 0.4rem;
 }
 
+.icon__text {
+    display: none;
+}
+
 .logo {
     width: 4rem;
     height: 4rem;
@@ -111,6 +115,14 @@ nav {
         display: none;
     }
 
+    .nav__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+    }
+
     .logo__nome {
         display: flex;
         font-size: 3rem;
@@ -182,4 +194,31 @@ nav {
         width: auto;
         left: 32%;
     }
+}
+
+@media screen and (min-width: 1728px) {
+    .icon__text {
+        display: block;
+        font-size: 2rem;
+        color: var(--black);
+    }
+
+    .nav__icons a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
