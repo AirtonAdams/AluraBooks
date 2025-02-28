@@ -69,6 +69,7 @@
     .swiper {
         width: 100%;
     }
+
     
     .swiper-slide {
         background-position: center;
@@ -96,6 +97,6 @@
     .swiper__wrapper {
         display: grid;
         grid-template-columns: 50% 50%;
-        padding: 0 5rem 5rem 5rem;
+        padding-bottom: 5rem;
     }
 }
